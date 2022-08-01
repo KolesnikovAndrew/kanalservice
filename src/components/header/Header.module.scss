@@ -1,0 +1,21 @@
+.header {
+  background-color: #e4b062;
+
+  height: 118px;
+  max-height: 118px;
+  min-width: 320px;
+}
+.nav {
+  display: flex;
+  gap: 160px;
+  align-items: center;
+  padding: 28px 16px;
+}
+.logo__mobile {
+  width: 68px;
+  height: 62px;
+}
+.logout {
+  width: 62px;
+  height: 58px;
+}
