@@ -1,0 +1,26 @@
+$blue: #27569c;
+
+.post__photo {
+  width: 150px;
+  height: 150px;
+  display: none;
+}
+
+.post {
+  border: 5px solid $blue;
+  border-radius: 5px;
+  width: 290px;
+  height: 200px;
+  padding-left: 10px;
+}
+
+.post p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px !important;
+}
+
+.post__body {
+  display: none;
+}
