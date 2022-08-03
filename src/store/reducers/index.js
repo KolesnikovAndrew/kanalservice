@@ -4,6 +4,7 @@ const initialState = {
   isLoading: true,
   isAuth: false,
   posts: [],
+  authUser: "",
 };
 
 const AppReducer = (state = initialState, action) => {
@@ -14,7 +15,21 @@ const AppReducer = (state = initialState, action) => {
         isLoading: false,
         posts: state.posts.concat([action.payload]),
       };
-
+    case actionTypes.GET_AUTH_USER:
+      return {
+        ...state,
+        authUser: action.payload,
+      };
+    case actionTypes.LOGIN:
+      return {
+        ...state,
+        isAuth: true,
+      };
+    case actionTypes.LOGOUT:
+      return {
+        ...state,
+        isAuth: false,
+      };
     default:
       return state;
   }

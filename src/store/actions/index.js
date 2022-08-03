@@ -5,6 +5,21 @@ export const loadUser = (data) => ({
   payload: data,
 });
 
+export const authUserAction = (data) => ({
+  type: actionTypes.GET_AUTH_USER,
+  payload: data,
+});
+
+export const login = () => ({
+  type: actionTypes.LOGIN,
+});
+export const logout = () => ({
+  type: actionTypes.LOGOUT,
+});
+
 export default {
   loadUser,
+  authUserAction,
+  login,
+  logout,
 };

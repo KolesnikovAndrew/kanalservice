@@ -12,9 +12,12 @@ $blue: #27569c;
   width: 290px;
   height: 200px;
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
-.post p {
+.post {
   text-align: left;
   font-weight: bold;
   font-size: 18px;
@@ -23,4 +26,57 @@ $blue: #27569c;
 
 .post__body {
   display: none;
+}
+
+.autor__info {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+@media screen and (min-width: 740px) {
+  .post__photo {
+    display: inline;
+  }
+  .autor__info {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 20px;
+  }
+  .post {
+    width: 325px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    margin-top: 0 !important;
+    align-items: left;
+    justify-content: left;
+    padding-left: 19px;
+  }
+
+  .post__body {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .post__photo {
+    display: inline;
+  }
+  .autor__info {
+    flex-direction: row;
+  }
+  .post {
+    width: 467px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24;
+  }
+
+  .post__body {
+    display: block;
+  }
 }
